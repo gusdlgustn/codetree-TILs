@@ -7,10 +7,10 @@ M, D = map(int, input().split())
 #         return False
 
 def is_day(m, n):
-    if m==1 or 3 or 5 or 7 or 8 or 10 or 12:
+    if m==1 or m==3 or m==5 or m==7 or m==8 or m==10 or m==12:
         if n <= 31:
             return True
-    elif m==4 or 6 or 9 or 11:
+    elif m==4 or m==6 or m==9 or m==11:
         if n <= 30:
             return True
     elif m==2:
