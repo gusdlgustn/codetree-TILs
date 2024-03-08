@@ -16,7 +16,8 @@ def is_day(m, n):
     elif m==2:
         if n <= 28:
             return True
-    return False
+    else:
+        return False
 
 if is_day(M, D):
     print('Yes')
