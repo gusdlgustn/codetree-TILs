@@ -29,12 +29,12 @@ def is_day(y, m, d):
                 print('Winter')
             else:
                 print(-1)
-    elif d<=31:
+    elif (m==1 or m==3 or m==5 or m==7 or m==8 or m==10 or m==12) and (d<=31):
         if (m==1 or m==12):
             print('Winter')
         elif m==3 or m==5:
             print('Spring')
-        elif m==7:
+        elif m==7 or m==8:
             print('Summer')
         else:
             print('Fall')
