@@ -12,4 +12,7 @@ for i in range(1,m2+1):
     days_2 += num_of_days[i]
 days_2 += d2
 
-print(days_2 - days_1)
+if days_1 == days_2:
+    print(1)
+else:
+    print(days_2 - days_1)
