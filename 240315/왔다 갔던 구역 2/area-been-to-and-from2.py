@@ -23,16 +23,28 @@ current = 0 + sum_L # 0(시작위치) + offset
 
 for moving in order:
     if moving > 0:
-        for i in range(current+1, moving+1):
+        for i in range(current, current+moving+1):
             section[i] += 1
     else: # moving < 0
-        for i in range(current+moving, current):
+        for i in range(current+moving, current+1):
             section[i] += 1
+    current += moving
 
+overlap = []
+overlap_nonnested = []
+tmp = []
 
-count = 0
 for elem in section:
     if elem > 1:
-        count += 1
+        tmp.append(elem)
+        overlap_nonnested.append(elem)
+    else:
+        overlap.append(tmp)
+        tmp = []
 
-print(count)
+overlap_final = []
+for lst in overlap:
+    if lst != []:
+       overlap_final.append(lst)
+
+print(len(overlap_nonnested)-len(overlap_final))
