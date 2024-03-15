@@ -2,7 +2,7 @@ N, B = map(int, input().split())
 
 changed = []
 while True:
-    if N < 2:
+    if N < B:
         changed.append(N)
         break
     
