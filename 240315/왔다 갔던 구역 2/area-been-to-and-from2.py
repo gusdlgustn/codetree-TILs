@@ -29,5 +29,10 @@ for moving in order:
         for i in range(current+moving, current):
             section[i] += 1
 
-overlap = [i for elem in section if elem > 1]
-print(len(overlap))
+
+count = 0
+for elem in section:
+    if elem > 1:
+        count += 1
+
+print(count)
