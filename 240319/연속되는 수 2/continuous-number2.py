@@ -4,10 +4,12 @@ for _ in range(N):
     num = int(input())
     lst.append(num)
 
-cnt = 1
-for i in range(N-1):
+ans, cnt = 0, 1
+for i in range(1, N-1):
     if (lst[i] == lst[i+1]):
         cnt += 1
-
-
-print(cnt)
+    else:
+        cnt = 1
+    
+    ans = max(ans, cnt)
+print(ans)
