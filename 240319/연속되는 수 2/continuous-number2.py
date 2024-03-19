@@ -4,7 +4,7 @@ for _ in range(N):
     num = int(input())
     lst.append(num)
 
-ans, cnt = 0, 1
+ans, cnt = 1, 1
 for i in range(1, N-1):
     if (lst[i] == lst[i+1]):
         cnt += 1
