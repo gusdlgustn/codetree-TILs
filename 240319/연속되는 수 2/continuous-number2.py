@@ -6,7 +6,7 @@ for _ in range(N):
 
 cnt = 0
 for i in range(N):
-    if (i == 0) or (lst[i] != lst[i - 1]):
+    if (i == 0) or (lst[i] == lst[i - 1]):
         cnt += 1
 
 print(cnt)
