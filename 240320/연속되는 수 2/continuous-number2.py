@@ -6,7 +6,7 @@ for _ in range(N):
     lst.append(num)
 
 ans, cnt = 0, 0
-for i in range(n):
+for i in range(N):
 	# Case 1
 	if i >= 1 and lst[i] == lst[i - 1]:
 		cnt += 1
