@@ -45,3 +45,5 @@ for i in range(max(len(A_loc), len(B_loc))):
     elif A_loc[i] == B_loc[i]:
         print(i)
         break
+    else:
+        print(-1)
