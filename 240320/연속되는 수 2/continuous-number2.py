@@ -8,7 +8,7 @@ for _ in range(N):
 ans, cnt = 0, 0
 for i in range(n):
 	# Case 1
-	if i >= 1 and arr[i] == arr[i - 1]:
+	if i >= 1 and lst[i] == lst[i - 1]:
 		cnt += 1
 	# Case 2
 	else:
