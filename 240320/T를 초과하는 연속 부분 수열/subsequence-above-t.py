@@ -4,12 +4,13 @@ arr = list(map(int, input().split()))
 
 ans, cnt = 0, 0
 for i in range(n):
-    if (i >= 1) and ((arr[i-1] > t) and (arr[i-1] < arr[i])):
+    if (i >= 1) and ((t < arr[i-1] < arr[i])):
         cnt += 1
     else:
         cnt = 1
 
     ans = max(ans, cnt)
+
 
 if cnt == 1:
     print(0)
