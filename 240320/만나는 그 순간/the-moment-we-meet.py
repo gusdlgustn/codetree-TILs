@@ -38,12 +38,11 @@ for d, t in B:
             B_cur += 1
             B_loc.append(B_cur)
 
-
+ans = -1
 for i in range(max(len(A_loc), len(B_loc))):
     if i == 0:
         pass
     elif A_loc[i] == B_loc[i]:
-        print(i)
+        ans = i
         break
-    else:
-        print(-1)
+print(ans)
