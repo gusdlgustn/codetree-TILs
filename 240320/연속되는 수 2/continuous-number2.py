@@ -6,8 +6,8 @@ for _ in range(N):
     lst.append(num)
 
 ans, cnt = 0, 1
-for i in range(1, N-1):
-    if (lst[i] == lst[i+1]):
+for i in range(N-1):
+    if i >= 1 and (lst[i] == lst[i+1]):
         cnt += 1
     else:
         cnt = 1
