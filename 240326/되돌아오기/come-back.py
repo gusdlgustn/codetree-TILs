@@ -17,7 +17,7 @@ mapper = {
     'W':2,
     'N':3
 }
-
+comeback = 0
 time = 0
 for direc, dist in arr:
     move_dir = mapper[direc]
@@ -28,4 +28,8 @@ for direc, dist in arr:
 
         if x == 0 and y == 0:
             print(time)
+            comeback = 1
             break
+
+if comeback == 0:
+    print(-1)
