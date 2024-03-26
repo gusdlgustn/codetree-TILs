@@ -22,6 +22,6 @@ for i in range(t):
     if in_range(nx, ny):
         x, y = nx, ny
     else:
-        move_dir -= 3
+        move_dir = 3 - move_dir
 
 print(x+1, y+1)
