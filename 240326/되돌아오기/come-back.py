@@ -29,7 +29,10 @@ for direc, dist in arr:
         if x == 0 and y == 0:
             print(time)
             comeback = True
+            break
+    if comeback:
         break
+
         
 
 if not comeback:
