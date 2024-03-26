@@ -30,6 +30,7 @@ for direc, dist in arr:
             print(time)
             comeback = 1
             break
-
+    break
+    
 if comeback == 0:
     print(-1)
